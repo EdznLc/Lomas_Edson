@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-gradient-to-br from-[#e8f4f8] via-[#d4e8ee] to-[#bcd9e3] min-h-screen flex flex-col items-center pb-8">
+
+    <header class="flex items-center justify-between px-6 py-5 w-full bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-10">
+        <img class="w-[50px] h-[50px] object-cover hover:scale-110 transition-transform" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-2.png">
+        <div class="font-semibold text-[#10355a] text-base tracking-wide">Dashboard</div>
+        <img class="w-[50px] hover:scale-110 cursor-pointer transition-transform" alt="Menu" src="imagenes/frame-25.svg">
+    </header>
+
+    <div class="font-medium text-[#10355a] text-2xl text-center mt-4">
+        Hello, <span class="font-bold text-[#10355a]">Username</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6 w-[340px] px-4 mt-6">
+        
+        <a href="vista_2.html" class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2 no-underline">
+            <img class="w-12 h-12" src="imagenes/fa-solid-wrench.svg" alt="Design">
+            <div class="font-semibold text-[#10355a] text-sm text-center">Design Keyboard</div>
+        </a>
+
+        <div class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2">
+            <img class="w-12 h-12" src="imagenes/bxs-package.svg" alt="Orders">
+            <div class="font-semibold text-[#10355a] text-sm text-center">My Orders</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2">
+            <div class="w-12 h-12 bg-blue-600 rounded-lg"></div> 
+            <div class="font-semibold text-[#10355a] text-sm text-center">Accessories</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2">
+            <img class="w-12 h-12" src="imagenes/tdesign-camera-filled.svg" alt="Gallery">
+            <div class="font-semibold text-[#10355a] text-sm text-center">Gallery</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2">
+            <img class="w-12 h-12" src="imagenes/bi-cassette-fill.svg" alt="Designs">
+            <div class="font-semibold text-[#10355a] text-sm text-center">My Designs</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 p-6 gap-2">
+            <img class="w-12 h-12" src="imagenes/material-symbols-settings.svg" alt="Settings">
+            <div class="font-semibold text-[#10355a] text-sm text-center">Settings</div>
+        </div>
+    </div>
+
+    <nav class="flex flex-col w-[340px] items-start justify-center gap-2 px-4 mt-8">
+        <a href="vista_6.html" class="flex items-center gap-3 w-full cursor-pointer px-4 py-3 rounded-xl hover:bg-white/60 transition-all no-underline">
+            <svg class="w-5 h-5 text-[#10355a]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <div class="font-medium text-[#10355a] text-sm">My Cart</div>
+        </a>
+        
+        <button class="flex items-center gap-3 w-full cursor-pointer px-4 py-3 rounded-xl hover:bg-white/60 transition-all">
+            <svg class="w-5 h-5 text-[#10355a]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <div class="font-medium text-[#10355a] text-sm">Wishlist</div>
+        </button>
+
+        <button class="flex items-center gap-3 w-full cursor-pointer px-4 py-3 rounded-xl hover:bg-white/60 transition-all">
+            <svg class="w-5 h-5 text-[#10355a]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <div class="font-medium text-[#10355a] text-sm">Support</div>
+        </button>
+
+        <a href="login.html" class="flex items-center gap-3 w-full cursor-pointer px-4 py-3 rounded-xl hover:bg-white/60 transition-all no-underline">
+            <svg class="w-5 h-5 text-[#10355a]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+            <div class="font-medium text-[#10355a] text-sm">Log Out</div>
+        </a>
+    </nav>
+</body>
+</html>

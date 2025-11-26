@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-[#cde0e6] min-h-screen flex flex-col items-center justify-between">
+
+    <header class="flex h-[75px] items-center justify-center gap-[71.5px] w-full bg-[#d9d9d9]">
+        <img class="w-[50px] h-[50px] object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-2.png">
+        <div class="text-xs font-normal text-black">Dashboard</div>
+        <img class="w-[50px]" alt="Menu" src="imagenes/frame-49.svg">
+    </header>
+
+    <section class="flex flex-col items-center justify-center gap-2 w-full">
+        <h1 class="text-xl text-center text-black">Hello "Username"</h1>
+        <div class="flex h-[140px] items-center justify-center bg-white w-full">
+            <img class="w-[323px] h-[114.11px]" alt="Keyboard" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png">
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center gap-[60px] w-full">
+        <div class="flex items-center justify-center gap-[8.5px] w-full">
+            <button class="w-[70px] h-auto px-4 py-2 text-[10px] rounded-lg shadow-md bg-[#103359] text-white border border-[#103359]">Layout</button>
+            <a href="vista_3.html" class="w-[70px] h-auto px-4 py-2 text-[10px] rounded-lg shadow-md bg-transparent text-black border border-[#103359] flex justify-center items-center no-underline">Case</a>
+            <a href="vista_4.html" class="w-[70px] h-auto px-4 py-2 text-[10px] rounded-lg shadow-md bg-transparent text-black border border-[#103359] flex justify-center items-center no-underline">Switches</a>
+            <a href="vista_5.html" class="w-[70px] h-auto px-4 py-2 text-[10px] rounded-lg shadow-md bg-transparent text-black border border-[#103359] flex justify-center items-center no-underline">Keycaps</a>
+        </div>
+
+        <div class="flex w-[244px] items-center justify-center gap-[17px]">
+            <button class="w-[70px] px-4 py-2 text-[10px] rounded-lg shadow-md bg-transparent text-black border border-[#10355a] hover:bg-[#10355a] hover:text-white">60%</button>
+            <button class="w-[70px] px-4 py-2 text-[10px] rounded-lg shadow-md bg-[#10355a] text-white border border-[#10355a]">TKL</button>
+            <button class="w-[70px] px-4 py-2 text-[10px] rounded-lg shadow-md bg-transparent text-black border border-[#10355a] hover:bg-[#10355a] hover:text-white">100%</button>
+        </div>
+    </section>
+
+    <footer class="inline-flex items-center justify-center gap-2.5 px-[5px] py-2.5">
+        <a href="vista_1.html" class="w-[142px] text-[#10355a] text-[10px] p-0 text-center hover:underline">Go Back</a>
+        
+        <a href="vista_6.html" class="w-[70px] h-[30px] bg-[#10355a] text-white text-[10px] rounded-lg shadow-md flex items-center justify-center hover:bg-[#10355a]/90 no-underline">
+            Add to Cart
+        </a>
+        
+        <button class="w-[70px] h-[30px] bg-[#888888] text-black text-[10px] rounded-lg shadow-md hover:bg-[#888888]/90">
+            Save Design
+        </button>
+    </footer>
+
+</body>
+</html>
