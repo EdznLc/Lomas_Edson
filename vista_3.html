@@ -8,71 +8,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style> body { font-family: 'Inter', sans-serif; } </style>
 </head>
-<body class="bg-[#cde0e6] min-h-screen flex flex-col items-center justify-between">
+<body class="bg-gradient-to-b from-[#f5f7fa] to-[#e8ecf1] min-h-screen flex flex-col">
 
-    <header class="flex h-[75px] items-center justify-center gap-[71.5px] w-full bg-[#d9d9d9]">
-        <img class="w-[50px] h-[50px] object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-2.png">
-        <div class="text-xs font-normal text-black">Dashboard</div>
-        <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    <header class="flex items-center justify-between px-6 py-4 bg-white shadow-sm border-b border-[#e0e0e0]">
+        <img class="w-12 h-12 object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-2.png">
+        <h2 class="text-base font-semibold text-[#10355a]">Dashboard</h2>
+        <svg class="w-8 h-8 text-[#10355a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
     </header>
 
-    <section class="flex flex-col items-center justify-center gap-2 w-full">
-        <h1 class="text-xl text-center text-black">Hello "Username"</h1>
-        <div class="flex h-[140px] items-center justify-center bg-white w-full">
-            <img class="w-[315px] h-[111.29px]" alt="Keyboard" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png">
+    <main class="flex-1 flex flex-col items-center justify-start py-8 px-4">
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold text-[#10355a] text-center mb-3">Choose Your Case</h1>
+            <p class="text-sm text-[#666666] text-center">Customize the color of your keyboard frame</p>
         </div>
-    </section>
 
-    <nav class="flex items-center justify-center gap-[8.75px] w-full">
-        <a href="vista_2.html" class="w-[70px] h-auto px-2 py-2.5 rounded-lg border shadow-md bg-transparent text-black border-[#10355a] text-[10px] text-center no-underline">Layout</a>
-        <button class="w-[70px] h-auto px-2 py-2.5 rounded-lg border shadow-md bg-[#10355a] text-white border-[#10355a] text-[10px] text-center">Case</button>
-        <a href="vista_4.html" class="w-[70px] h-auto px-2 py-2.5 rounded-lg border shadow-md bg-transparent text-black border-[#10355a] text-[10px] text-center no-underline">Switches</a>
-        <a href="vista_5.html" class="w-[70px] h-auto px-2 py-2.5 rounded-lg border shadow-md bg-transparent text-black border-[#10355a] text-[10px] text-center no-underline">Keycaps</a>
-    </nav>
+        <img class="w-full max-w-sm mb-10 object-contain" alt="Keyboard showcase" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png">
 
-    <section class="flex flex-col gap-4 items-center">
-        <div class="flex w-[232px] items-center justify-center gap-[18px]">
-            <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-black group-hover:scale-105 transition"><div class="w-10 h-10 bg-black rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black underline">Black</div>
-            </button>
-            <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-white group-hover:scale-105 transition"><div class="w-10 h-10 bg-white rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">White</div>
-            </button>
-            <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-[#555555] group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#555555] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">Grey</div>
-            </button>
-            <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-[#d4c0c0] group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#d4bfbf] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black whitespace-nowrap">Rose Gold</div>
-            </button>
-        </div>
-        <div class="flex w-[232px] items-center justify-center gap-[18px]">
-             <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-black group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#10355a] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">Blue</div>
-            </button>
-             <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-[#5e805a] group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#5e805a] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">Green</div>
-            </button>
-             <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-[#8d4d4d] group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#8d4d4d] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">Red</div>
-            </button>
-             <button class="flex flex-col w-11 items-center justify-center cursor-pointer group">
-                <div class="flex flex-col h-11 items-center justify-center w-full rounded-[44px] border border-[#c2817f] group-hover:scale-105 transition"><div class="w-10 h-10 bg-[#c2817f] rounded-[20px]"></div></div>
-                <div class="text-[10px] text-black">Coral</div>
-            </button>
-        </div>
-    </section>
+        <nav class="flex items-center justify-center gap-3 mb-12 flex-wrap">
+            <a href="vista_2.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Layout</a>
+            <button class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-[#10355a] text-white border-[#10355a] shadow-lg">Case</button>
+            <a href="vista_4.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Switches</a>
+            <a href="vista_5.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Keycaps</a>
+        </nav>
 
-    <footer class="inline-flex items-center justify-center gap-2.5 px-[5px] py-2.5">
-        <a href="vista_1.html" class="w-[171px] text-[#10355a] text-[10px] p-0 text-center hover:underline">Go Back</a>
-        <a href="vista_6.html" class="w-[70px] h-[30px] bg-[#10355a] text-white text-[10px] rounded-lg shadow-md flex items-center justify-center hover:bg-[#10355a]/90 no-underline">Add to Cart</a>
-        <button class="w-[70px] h-[30px] bg-[#888888] text-black text-[10px] rounded-lg shadow-md hover:bg-[#888888]/90">Save Design</button>
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl">
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-black border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Black</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-white border border-gray-300 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">White</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#555555] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Grey</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#d4bfbf] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Rose Gold</h3>
+            </button>
+            
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-[#10355a] ring-2 ring-[#10355a]/30 shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#10355a] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Blue</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#5e805a] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Green</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#8d4d4d] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Red</h3>
+            </button>
+            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-md p-4 flex flex-col items-center w-32 transition-all">
+                <div class="w-12 h-12 rounded-full bg-[#c2817f] border border-gray-200 shadow-inner mb-2"></div>
+                <h3 class="font-semibold text-[#10355a] text-xs">Coral</h3>
+            </button>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-[#e0e0e0] px-6 py-4 flex items-center justify-center gap-3 flex-wrap">
+        <a href="vista_1.html" class="text-[#10355a] hover:text-[#0a1f35] font-medium text-sm no-underline px-4">Go Back</a>
+        <a href="vista_6.html" class="px-6 py-2.5 bg-[#10355a] text-white rounded-lg font-medium text-sm hover:bg-[#0a1f35] transition-colors duration-200 shadow-md no-underline">Add to Cart</a>
+        <button class="px-6 py-2.5 bg-[#e0e0e0] text-[#333333] rounded-lg font-medium text-sm hover:bg-[#d0d0d0] transition-colors duration-200">Save Design</button>
     </footer>
 </body>
 </html>
