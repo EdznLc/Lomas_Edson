@@ -3,65 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keycaps</title>
+    <title>Diseñar Teclado - Keycaps</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <style> 
+        body { font-family: 'Inter', sans-serif; } 
+        .keycap-option { transition: all 0.2s; border-color: theme('colors.gray.300'); box-shadow: theme('boxShadow.lg'); }
+    </style>
 </head>
-<body class="bg-gradient-to-b from-[#f5f7fa] to-[#e8ecf1] min-h-screen flex flex-col">
+<body class="bg-[#cde0e6] min-h-screen flex flex-col">
 
-    <header class="flex items-center justify-between px-6 py-4 bg-white shadow-sm border-b border-[#e0e0e0]">
-        <img class="w-12 h-12 object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-2.png">
-        <h2 class="text-base font-semibold text-[#10355a]">Dashboard</h2>
-        <svg class="w-8 h-8 text-[#10355a]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    <header class="flex items-center justify-between px-6 py-4 w-full bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-10">
+        <a href="vista_4.html" class="flex items-center gap-1 text-[#103359] hover:text-[#0a1f35] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            <span class="font-medium text-sm hidden sm:inline">Volver</span>
+        </a>
+
+        <a href="vista_1.html">
+            <img class="w-[55px] h-[55px] object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-1.png">
+        </a>
+
+        <button onclick="alertPrototype()">
+             <svg class="w-8 h-8 text-[#103359] cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
     </header>
 
-    <main class="flex-1 flex flex-col items-center justify-start py-8 px-4">
-        <div class="mb-8">
-            <h1 class="text-2xl font-bold text-[#10355a] text-center mb-3">Choose Your Keycaps</h1>
-            <p class="text-sm text-[#666666] text-center">Select from our premium keycap collection</p>
+    <main class="flex-1 flex flex-col items-center justify-start py-8 px-4 w-full">
+        <div class="mb-8 w-full max-w-sm">
+            <h1 class="text-2xl font-bold text-[#103359] text-center mb-1">Elige tus Keycaps</h1>
+            <p class="text-sm text-gray-700 text-center">Selecciona de nuestra colección premium de teclas</p>
         </div>
 
-        <img class="w-full max-w-sm mb-10 object-contain" alt="Keyboard showcase" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png">
+        <div class="w-full max-w-sm mb-10 p-6 bg-white rounded-2xl shadow-xl flex items-center justify-center">
+            <img class="w-full object-contain" alt="Keyboard showcase" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png">
+        </div>
 
-        <nav class="flex items-center justify-center gap-3 mb-12 flex-wrap">
-            <a href="vista_2.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Layout</a>
-            <a href="vista_3.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Case</a>
-            <a href="vista_4.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#10355a] border-[#10355a] hover:bg-[#f0f4f8] no-underline">Switches</a>
-            <button class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-[#10355a] text-white border-[#10355a] shadow-lg">Keycaps</button>
+        <nav class="flex items-center justify-center gap-2 mb-12 flex-wrap max-w-lg px-2">
+            <a href="vista_2.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#103359] border-[#103359] hover:bg-gray-100 no-underline shadow-sm">1. Layout</a>
+            <a href="vista_3.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#103359] border-[#103359] hover:bg-gray-100 no-underline shadow-sm">2. Case</a>
+            <a href="vista_4.html" class="px-4 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 border-2 bg-white text-[#103359] border-[#103359] hover:bg-gray-100 no-underline shadow-sm">3. Switches</a>
+            <button class="px-4 py-2.5 rounded-lg font-bold text-sm transition-all duration-200 border-2 bg-[#103359] text-white border-[#103359] shadow-md">4. Keycaps</button>
         </nav>
 
         <section class="flex items-center justify-center gap-8 mb-12 flex-wrap max-w-2xl">
-            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-lg p-4 flex flex-col items-center w-40 transition-all">
+            <button onclick="selectKeycap(this)" data-set="Black" class="keycap-option cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#103359] p-4 flex flex-col items-center w-40 transition-all">
                 <div class="w-24 h-24 bg-transparent flex items-center justify-center mb-3">
                     <img class="w-20 h-20 object-contain" alt="Black" src="imagenes/-ac9dc94c-ea20-46fe-a5d8-adc79583280f--1.png">
                 </div>
                 <h3 class="font-semibold text-[#10355a] text-sm">Black</h3>
-                <p class="text-xs text-[#666666]">Standard</p>
+                <p class="text-xs text-gray-600">Standard</p>
             </button>
-
-            <button class="cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#10355a] shadow-lg p-4 flex flex-col items-center w-40 transition-all">
+            <button onclick="selectKeycap(this)" data-set="White" class="keycap-option cursor-pointer bg-white rounded-xl border-2 border-gray-300 hover:border-[#103359] shadow-lg p-4 flex flex-col items-center w-40 transition-all">
                 <div class="w-24 h-24 bg-transparent flex items-center justify-center mb-3">
                     <img class="w-20 h-20 object-contain" alt="White" src="imagenes/-d04cd72d-6be2-45ae-8c1a-8a1ba3b810d6--1.png">
                 </div>
                 <h3 class="font-semibold text-[#10355a] text-sm">White</h3>
-                <p class="text-xs text-[#666666]">Minimal</p>
+                <p class="text-xs text-gray-600">Minimal</p>
             </button>
-
-            <button class="cursor-pointer bg-white rounded-xl border-2 border-[#10355a] ring-4 ring-[#10355a]/30 shadow-lg p-4 flex flex-col items-center w-40 transition-all">
+            <button onclick="selectKeycap(this)" data-set="Blue" class="keycap-option cursor-pointer bg-white rounded-xl border-2 border-[#103359] ring-4 ring-[#103359]/30 shadow-lg p-4 flex flex-col items-center w-40 transition-all">
                 <div class="w-24 h-24 bg-transparent flex items-center justify-center mb-3">
                     <img class="w-20 h-20 object-contain" alt="Blue" src="imagenes/-39beebc0-b029-4996-917b-2488b2eb7ec8--1.png">
                 </div>
                 <h3 class="font-semibold text-[#10355a] text-sm">Blue</h3>
-                <p class="text-xs text-[#666666]">Accent</p>
+                <p class="text-xs text-gray-600">Accent</p>
             </button>
         </section>
     </main>
 
-    <footer class="bg-white border-t border-[#e0e0e0] px-6 py-4 flex items-center justify-center gap-3 flex-wrap">
-        <a href="vista_1.html" class="text-[#10355a] hover:text-[#0a1f35] font-medium text-sm no-underline px-4">Go Back</a>
-        <a href="vista_6.html" class="px-6 py-2.5 bg-[#10355a] text-white rounded-lg font-medium text-sm hover:bg-[#0a1f35] transition-colors duration-200 shadow-md no-underline">Add to Cart</a>
-        <button class="px-6 py-2.5 bg-[#e0e0e0] text-[#333333] rounded-lg font-medium text-sm hover:bg-[#d0d0d0] transition-colors duration-200">Save Design</button>
+    <footer class="bg-white border-t border-gray-300 px-6 py-4 flex items-center justify-center gap-3 flex-wrap shadow-inner">
+        <a href="vista_4.html" class="text-[#103559] hover:text-[#0a1f35] font-medium text-sm no-underline px-4">Volver a Switches</a>
+        <a href="vista_6.html" class="px-6 py-2.5 bg-[#103559] text-white rounded-lg font-bold text-sm hover:bg-[#0a1f35] transition-colors duration-200 shadow-md no-underline">Añadir al Carrito</a>
+        <button onclick="alertPrototypeSave()" class="px-6 py-2.5 bg-gray-300 text-gray-600 rounded-lg font-medium text-sm hover:bg-gray-400 transition-colors duration-200 shadow-md cursor-not-allowed">Guardar Diseño</button>
     </footer>
+
+    <script>
+        function alertPrototype() { alert('¡Atención! Esta funcionalidad no está activa en el prototipo.'); }
+        function alertPrototypeSave() { alert('Aún no se puede guardar el diseño. Esta funcionalidad no está activa en el prototipo.'); }
+        function selectKeycap(selectedButton) {
+            document.querySelectorAll('.keycap-option').forEach(button => {
+                button.classList.remove('border-[#103359]', 'ring-4', 'ring-[#103359]/30');
+                button.classList.add('border-gray-300', 'hover:border-[#103359]');
+            });
+            selectedButton.classList.remove('border-gray-300');
+            selectedButton.classList.add('border-[#103359]', 'ring-4', 'ring-[#103359]/30');
+            console.log('Set de Keycaps seleccionado:', selectedButton.dataset.set);
+        }
+    </script>
 </body>
 </html>

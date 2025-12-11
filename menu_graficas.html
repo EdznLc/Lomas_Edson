@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas del Proyecto</title>
+    <style>
+        /* Variables de color para fácil mantenimiento */
+        :root {
+            /* Colores basados en la imagen */
+            --color-light-background: #f4f4f4;
+            --color-primary-purple: #673AB7; /* Color principal para texto y bordes */
+            --color-active-button: #7955DA; /* Un tono más claro para el botón activo */
+            --color-main-button: #4C50F5; /* Azul brillante para el botón de regresar */
+        }
+
+        /* Estilo general del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-light-background);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        /* Título */
+        .page-header {
+            font-size: 2em;
+            color: var(--color-primary-purple);
+            margin-bottom: 40px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Contenedor principal para la cuadrícula de botones */
+        .grid-container {
+            width: 80%;
+            max-width: 900px; /* Ancho máximo para el contenedor de la cuadrícula */
+            display: grid;
+            /* Cuatro columnas de igual tamaño, con un espacio entre ellas */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo base de los botones de gráfica */
+        .btn-graph {
+            padding: 15px 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 500;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+            
+            /* Estilo por defecto (inactivo) */
+            background-color: #ffffff;
+            color: var(--color-primary-purple);
+            border: 1px solid var(--color-primary-purple);
+        }
+
+        .btn-graph:hover {
+            background-color: #EDE7F6; /* Un color muy claro al pasar el ratón */
+        }
+
+        /* Estilo para el botón ACTIVO ("Gráfica 2") */
+        .btn-graph.active {
+            background-color: var(--color-active-button);
+            color: #ffffff;
+            border-color: var(--color-active-button);
+        }
+
+        .btn-graph.active:hover {
+            background-color: var(--color-active-button); /* Mantiene el color al pasar el ratón */
+        }
+
+        /* Manejo de la última fila (Gráfica 13, 14, 15) */
+        /* Hacemos que los últimos 3 botones ocupen 4 columnas y se centren */
+        /* Este truco solo funciona si el número de botones restantes es menor que el número de columnas */
+        .grid-container a:nth-child(13),
+        .grid-container a:nth-child(14),
+        .grid-container a:nth-child(15) {
+            /* Ocupar una de las tres partes que se define en el contenedor flexible */
+            flex-basis: calc(33.333% - 10px); 
+        }
+
+        /* Contenedor para la última fila para centrar los 3 botones */
+        .last-row {
+            grid-column: 1 / -1; /* Ocupa todas las columnas */
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Estilo para el botón de "Regresar a Menú Principal" */
+        .btn-main-menu {
+            padding: 15px 20px;
+            width: 80%;
+            max-width: 900px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s;
+
+            /* Color sólido azul brillante */
+            background-color: var(--color-main-button); 
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-main-menu:hover {
+            background-color: #5d61ff; /* Un tono ligeramente diferente al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-header">
+        <span style="font-size: 1.2em; vertical-align: middle;">📊</span> 
+        Gráficas del Proyecto CustomKey
+    </h1>
+
+    <div class="grid-container">
+        <a href="grafica_1.html" class="btn-graph">Gráfica 1</a>
+        <a href="grafica_2.html" class="btn-graph">Gráfica 2</a>
+        <a href="grafica_3.html" class="btn-graph">Gráfica 3</a>
+        <a href="grafica_4.html" class="btn-graph">Gráfica 4</a>
+
+        <a href="grafica_5.html" class="btn-graph">Gráfica 5</a>
+        <a href="grafica_6.html" class="btn-graph">Gráfica 6</a>
+        <a href="grafica_7.html" class="btn-graph">Gráfica 7</a>
+        <a href="grafica_8.html" class="btn-graph">Gráfica 8</a>
+
+        <a href="grafica_9.html" class="btn-graph">Gráfica 9</a>
+        <a href="grafica_10.html" class="btn-graph">Gráfica 10</a>
+        <a href="grafica_11.html" class="btn-graph">Gráfica 11</a>
+        <a href="grafica_12.html" class="btn-graph">Gráfica 12</a>
+
+        <div class="last-row">
+            <a href="grafica_13.html" class="btn-graph">Gráfica 13</a>
+            <a href="grafica_14.html" class="btn-graph">Gráfica 14</a>
+            <a href="grafica_15.html" class="btn-graph">Gráfica 15</a>
+        </div>
+    </div>
+    
+    <a href="menu.html" class="btn-main-menu">Regresar a Menú Principal</a>
+
+</body>
+</html>

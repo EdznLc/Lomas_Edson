@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Parcial 3 - Juna Pérez Sosa</title>
+    <style>
+        /* Variables de color para fácil mantenimiento */
+        :root {
+            /* Colores basados en la imagen */
+            --color-teal-border: #80CBC4; 
+            --color-teal-text: #00897B;
+            --color-purple-border: #9575CD;
+            --color-purple-text: #673AB7;
+            --color-background: #f7f7f7;
+            --color-card-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo general del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-background);
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center; /* Centrado vertical */
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Contenedor principal (la "tarjeta" blanca) */
+        .card {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px var(--color-card-shadow);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600; 
+            letter-spacing: 1px;
+        }
+
+        /* Subtítulo del alumno */
+        .alumno {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor para los botones */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+            align-items: stretch;
+        }
+
+        /* Contenedor para los dos botones superiores */
+        .top-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px; 
+        }
+
+        /* Estilo base para todos los botones */
+        .btn {
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s ease-in-out;
+            text-transform: uppercase;
+            background-color: #ffffff;
+            font-weight: 500;
+            text-decoration: none; /* Para usar enlaces <a> en lugar de <button> si es necesario */
+            display: inline-block;
+        }
+
+        /* Estilo de los botones INTERFAZ y GRÁFICAS */
+        .btn-teal {
+            color: var(--color-teal-text);
+            border: 1px solid var(--color-teal-border);
+            flex-grow: 1;
+        }
+
+        .btn-teal:hover {
+            background-color: #E0F2F1; /* Color de fondo claro al pasar el ratón */
+        }
+
+        /* Estilo del botón REGRESAR AL MENÚ PRINCIPAL */
+        .btn-purple {
+            color: var(--color-purple-text);
+            border: 1px solid var(--color-purple-border);
+        }
+
+        .btn-purple:hover {
+            background-color: #F3E5F5; /* Color de fondo claro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>EVALUACIÓN PACIAL 3</h1>
+        <p class="alumno">ALUMNO: Edson Lomas Corral</p>
+
+        <div class="button-container">
+            <div class="top-buttons">
+                <a href="login.html" class="btn btn-teal">INTERFAZ</a> 
+                <a href="menu_graficas.html" class="btn btn-teal">GRÁFICAS</a>
+            </div>
+            
+            <a href="index.html" class="btn btn-purple">REGRESAR AL MENÚ PRINCIPAL</a>
+        </div>
+    </div>
+</body>
+</html>

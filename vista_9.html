@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de la Comunidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-[#cde0e6] min-h-screen flex flex-col">
+
+    <header class="flex items-center justify-between px-6 py-4 w-full bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-10">
+        <a href="vista_1.html" class="flex items-center gap-1 text-[#103359] hover:text-[#0a1f35] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            <span class="font-medium text-sm hidden sm:inline">Volver</span>
+        </a>
+
+        <a href="vista_1.html">
+            <img class="w-[55px] h-[55px] object-cover" alt="Logo" src="imagenes/gemini-generated-image-igk6mdigk6mdigk6-removebg-preview-1.png">
+        </a>
+
+        <button onclick="alertPrototype()">
+             <svg class="w-8 h-8 text-[#103359] cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center justify-start py-8 px-4 w-full max-w-5xl mx-auto">
+        <div class="mb-8 w-full">
+            <h1 class="text-2xl font-bold text-[#103359] text-center mb-1">Galería de la Comunidad</h1>
+            <p class="text-sm text-gray-700 text-center">Inspírate con los increíbles diseños compartidos por nuestros usuarios.</p>
+        </div>
+
+        <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+            
+            <div onclick="alertPrototype()" class="bg-white rounded-xl shadow-lg border border-gray-300 overflow-hidden cursor-pointer hover:shadow-xl transition-shadow">
+                <div class="w-full h-40 bg-gray-100 flex items-center justify-center p-4">
+                    <div class="w-full h-full bg-gray-300/80 rounded border-2 border-gray-400 flex items-center justify-center">
+                        <span class="text-xs text-gray-500 font-semibold">TKL | Azul Claro</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-[#103359] text-base">"Ocean Breeze"</h3>
+                    <p class="text-xs text-gray-600">By: @KeyMaster42</p>
+                    <button class="mt-2 text-xs font-bold text-[#103359] hover:underline cursor-not-allowed">Ver Especificaciones</button>
+                </div>
+            </div>
+
+            <div onclick="alertPrototype()" class="bg-white rounded-xl shadow-lg border-2 border-[#103359] ring-4 ring-[#103359]/30 overflow-hidden cursor-pointer hover:shadow-2xl transition-shadow">
+                <div class="w-full h-40 bg-[#f0f4f8] flex items-center justify-center p-2">
+                    <img class="w-4/5 object-contain" src="imagenes/gemini-generated-image-pnfn2apnfn2apnfn-removebg-preview-1.png" alt="Featured Keyboard">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-[#103359] text-base">"Minimalist Pro"</h3>
+                    <p class="text-xs text-gray-600">By: @Admin</p>
+                    <button class="mt-2 text-xs font-bold text-[#103359] hover:underline cursor-not-allowed">Ver Especificaciones</button>
+                </div>
+            </div>
+
+            <div onclick="alertPrototype()" class="bg-white rounded-xl shadow-lg border border-gray-300 overflow-hidden cursor-pointer hover:shadow-xl transition-shadow">
+                <div class="w-full h-40 bg-gray-100 flex items-center justify-center p-4">
+                     <div class="w-full h-full bg-gray-700/80 rounded border-2 border-red-500 flex items-center justify-center">
+                        <span class="text-xs text-white font-semibold">60% | Tactile</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-[#103359] text-base">"Cherry Red"</h3>
+                    <p class="text-xs text-gray-600">By: @GamerBuilds</p>
+                    <button class="mt-2 text-xs font-bold text-[#103359] hover:underline cursor-not-allowed">Ver Especificaciones</button>
+                </div>
+            </div>
+
+            <div onclick="alertPrototype()" class="bg-white rounded-xl shadow-lg border border-gray-300 overflow-hidden cursor-pointer hover:shadow-xl transition-shadow">
+                <div class="w-full h-40 bg-gray-100 flex items-center justify-center p-4">
+                    <div class="w-full h-full bg-yellow-100 rounded border-2 border-yellow-300 flex items-center justify-center">
+                        <span class="text-xs text-gray-800 font-semibold">100% | Amarillo</span>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-[#103359] text-base">"The Silent Type"</h3>
+                    <p class="text-xs text-gray-600">By: @DevOpsKey</p>
+                    <button class="mt-2 text-xs font-bold text-[#103359] hover:underline cursor-not-allowed">Ver Especificaciones</button>
+                </div>
+            </div>
+            
+             <div class="col-span-full text-center text-sm text-gray-500 mt-4">
+                 Desplázate hacia abajo para cargar más diseños (funcionalidad no activa en el prototipo).
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-300 px-6 py-4 flex items-center justify-center gap-3 flex-wrap shadow-inner mt-auto">
+        <a href="vista_1.html" class="text-[#103359] hover:text-[#0a1f35] font-medium text-sm no-underline px-4">Volver al Dashboard</a>
+        
+        <a href="vista_2.html" class="px-6 py-2.5 bg-[#103359] text-white rounded-lg font-bold text-sm hover:bg-[#0a1f35] transition-colors duration-200 shadow-md no-underline">Empezar Mi Propio Diseño</a>
+    </footer>
+
+    <script>
+        // Función de alerta para las acciones no implementadas
+        function alertPrototype() {
+            alert('¡Atención! Esta funcionalidad (Ver Especificaciones) no está activa en el prototipo.');
+        }
+    </script>
+</body>
+</html>
